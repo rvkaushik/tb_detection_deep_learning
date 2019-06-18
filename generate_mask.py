@@ -12,9 +12,9 @@ class pi2pix():
                          
              output -- masks images for ChinaSet_AllFiles dataset
                                         """
-           # os.chdir("pix2pix-pytorch")
-            os.system('python pix2pix-pytorch/train.py --dataset tb  --direction="a2b" --cuda')
-            #os.system('python test.py --dataset pix2pix_test --direction="a2b" --cuda')
+            os.chdir("pix2pix-pytorch")
+            #os.system('python train.py --dataset tb  --direction="a2b"')
+            os.system('python test.py --dataset tb_test --direction="a2b" --cuda')
             return
 
 train_pix2pix=pi2pix()
